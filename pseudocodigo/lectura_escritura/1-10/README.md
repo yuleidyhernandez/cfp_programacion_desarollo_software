@@ -77,7 +77,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 <h2>Ejercicio 4</h2>
 <h3>conversion de temperatura</h3>
@@ -94,7 +94,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 
 <h2>Ejercicio 5</h2>
@@ -112,7 +112,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 <h2>Ejercicio 6</h2>
 <h3>costo de la llamada telefonica</h3>
@@ -129,7 +129,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 <h2>Ejercicio 7</h2>
 <h3>calculo de descuento</h3>
@@ -150,7 +150,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 
 <h2>Ejercicio 8</h2>
@@ -168,7 +168,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 <h2>Ejercicio 9</h2>
 <h3>circunferencia y area del circulo</h3>
@@ -185,7 +185,7 @@
     </code>
 </pre>
 
-<br
+<br>
 
 
 <h2>Ejercicio 10</h2>
@@ -203,4 +203,4 @@
     </code>
 </pre>
 
-<br
+<br>
