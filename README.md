@@ -14,4 +14,4 @@
 
 ## [funciones](./pseudocodigo/funciones)
 
-## [unciones recursivas](./pseudocodigo/funciones_recursivas)
+## [funciones recursivas](./pseudocodigo/funciones_recursivas)
