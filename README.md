@@ -9,3 +9,5 @@
 ## [bucles para](./pseudocodigo/bucles_para)
 
 ## [vectores](./pseudocodigo/vectores)
+
+## [matrices](./pseudocodigo/matrices)
