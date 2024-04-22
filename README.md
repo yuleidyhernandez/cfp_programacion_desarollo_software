@@ -13,3 +13,5 @@
 ## [matrices](./pseudocodigo/matrices)
 
 ## [funciones](./pseudocodigo/funciones)
+
+## [unciones recursivas](./pseudocodigo/funciones_recursivas)
