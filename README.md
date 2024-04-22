@@ -5,3 +5,5 @@
 ## [condiciones](./pseudocodigo/condiciones)
 
 ## [mientras y repetir](./pseudocodigo/mientras_repetir)
+
+## [bucles para](./pseudocodigo/bucles_para)
