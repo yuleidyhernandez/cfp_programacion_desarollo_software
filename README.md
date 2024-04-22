@@ -3,3 +3,5 @@
 ## [Lectura y escritura](./pseudocodigo/lectura_escritura)
 
 ## [condiciones](./pseudocodigo/condiciones)
+
+## [condiciones](./pseudocodigo/mientras_repetir)
