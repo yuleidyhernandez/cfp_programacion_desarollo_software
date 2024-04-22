@@ -4,4 +4,4 @@
 
 ## [condiciones](./pseudocodigo/condiciones)
 
-## [condiciones](./pseudocodigo/mientras_repetir)
+## [mientras y repetir](./pseudocodigo/mientras_repetir)
