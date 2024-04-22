@@ -6,7 +6,6 @@
             resultado = 0
             Para num = 1 Hasta 10 con Paso 1 Hacer
                 resultado = resultado + num
-                
             Fin Para
             escribir resultado
         FinAlgoritmo
