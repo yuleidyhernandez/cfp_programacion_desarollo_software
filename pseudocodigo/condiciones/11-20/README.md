@@ -1,11 +1,14 @@
 <h2>Ejercicio 11</h2>
 <h3>numero positivo negativo</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir numero0 Como Real
+
             escribir "Ingresar un numero: "
             leer numero0
+
             si (numero0 < 0)  entonces 
                 escribir "El numero que ingresaste es negativo" 
                 si (numero1 > 0) Entonces
@@ -20,12 +23,15 @@
 
 <h2>Ejercicio 12</h2>
 <h3>par o impar</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir numero1 Como Entero
+
             escribir "Ingrese un numero entero" 
             leer numero1
+
             si (numero1 % 2 = 0) Entonces
                 escribir "El numero ingresado es impar"
                 si (numero1 % 2 = 0) Entonces
@@ -40,31 +46,39 @@
 
 <h2>Ejercicio 13</h2>
 <h3>dia de la semana</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir numero2 Como Entero
             definir dias Como Entero
+
             escribir "Ingresa un numero del 1 al 7"
             leer numero2
             si (numero2 = 1) Entonces
                 Escribir "lunes" 
             FinSi
+
             si (numero2 = 2) Entonces
                 escribir "Martes"
             FinSi
+
             si (numero2 = 3 ) Entonces
                 Escribir "Miercoles"
             FinSi
+
             si (numero2 = 4) Entonces
                 Escribir "Jueves"
             FinSi
+
             si (numero2 = 5) Entonces
                 Escribir "Viernes"
             FinSi
+
             si (numero2 = 6 ) Entonces
                 escribir "Sabado"
             FinSi
+
             si (numero2 = 7 ) Entonces
                 Escribir "Domingo"
             FinSi

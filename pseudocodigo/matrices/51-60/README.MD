@@ -1,31 +1,39 @@
 <h2>Ejercicio 51</h2>
 <h3>suma de matrices</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir matrix1, matrix2, suma,suma1 Como Entero
             Dimension matrix1[3,3]
             Dimension matrix2[3,3]
+
             //Asignar valores a mi primera matriz
                 matrix1[1,1] = 5
                 matrix1[1,2] = 1
                 matrix1[1,3] = 2
+
                 matrix1[2,1] = 8
                 matrix1[2,2] = 9
                 matrix1[2,3] = 3
+
                 matrix1[3,1] = 8
                 matrix1[3,2] = 9
                 matrix1[3,3] = 2
+
                 //Asignar valor a mi segunda matriz
                 matrix2[1,1] = 8
                 matrix2[1,2] = 5
                 matrix2[1,3] = 2
+
                 matrix2[2,1] = 8
                 matrix2[2,2] = 6
                 matrix2[2,3] = 3
+
                 matrix2[3,1] = 8
                 matrix2[3,2] = 2
                 matrix2[3,3] = 5
+
                 para i = 1 Hasta 3 Con Paso 1 Hacer
                     para j = 1 Hasta  3 Con Paso 1 Hacer
                         escribir matrix1[i,j] " " " " Sin Saltar 
@@ -34,6 +42,7 @@
                     Escribir " "
                 FinPara
                 Escribir ""
+
                 para i = 1 Hasta 3 Con Paso 1 Hacer
                     para j = 1 Hasta  3 Con Paso 1 Hacer
                         escribir matrix2[i,j] " " " " Sin Saltar 
@@ -51,23 +60,29 @@
 
 <h2>Ejercicio 52</h2>
 <h3>promedio por columna</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir promedio_columna, suma como entero
             Dimension promedio_columna[3,4]
+
             promedio_columna[1,1]=8
             promedio_columna[2,1]=5 
             promedio_columna[3,1]=9
+
             promedio_columna[1,2]=3
             promedio_columna[2,2]=2
             promedio_columna[3,2]=7
+
             promedio_columna[1,3]=2
             promedio_columna[2,3]=4
             promedio_columna[3,3]=5
+
             promedio_columna[1,4]=3
             promedio_columna[2,4]=8
             promedio_columna[3,4]=2
+
             para c = 1 Hasta 4 Con Paso 1 Hacer
                 para f = 1 Hasta 3 Con Paso 1 Hacer
                     suma <- suma + promedio_columna[f,c]
@@ -82,11 +97,13 @@
 
 <h2>Ejercicio 53</h2>
 <h3>suma de diagonales</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir matriz, suma, suma2 Como entero
             Dimension matriz[5,5]
+
             matriz[1,1] =5	
             matriz[1,2] =2	
             matriz[1,3] =8	
@@ -111,7 +128,8 @@
             matriz[5,2] =2	
             matriz[5,3] =2	
             matriz[5,4] =7	
-            matriz[5,5] =9	
+            matriz[5,5] =9
+
             suma = 0
             suma1 = 0
             para i= 1 Hasta  5 Con Paso 1 Hacer
@@ -128,23 +146,29 @@
 
 <h2>Ejercicio 54</h2>
 <h3>mayor elemento por fila</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             definir mayor_fila,mayor_1 Como Entero
             Dimension mayor_fila[4,3]
+
             mayor_fila[1,1] = 1
             mayor_fila[1,2] = 2
             mayor_fila[1,3] = 4
+
             mayor_fila[2,1] = 8
             mayor_fila[2,2] = 5
             mayor_fila[2,3] = 3
+
             mayor_fila[3,1] = 3
             mayor_fila[3,2] = 9
             mayor_fila[3,3] = 5
+
             mayor_fila[4,1] = 6
             mayor_fila[4,2] = 2
             mayor_fila[4,3] = 3
+
             para i = 1 Hasta 4 Con Paso 1 Hacer
                 mayor_1 = mayor_fila[i,1]
                 Para j = 1 Hasta 3 Con Paso 1 Hacer
@@ -168,6 +192,7 @@
             definir matriz, matriz2 Como Entero
             Definir grafica Como Caracter
             Dimension matriz[4,4]
+
             matriz[1,1] =1
             matriz[1,2] =2
             matriz[1,3] =3
@@ -184,6 +209,7 @@
             matriz[4,2] =14
             matriz[4,3] =15
             matriz[4,4] =16
+
             para i = 1 Hasta 4 Con Paso 1 Hacer
                 para j = 1 Hasta  4 Con Paso 1 Hacer
                     escribir matriz[i,j] " " " " Sin Saltar 
@@ -191,6 +217,7 @@
                 Escribir " "
             FinPara
             Escribir ""
+
             para i = 1 Hasta 4 Con Paso 1 Hacer
                 para j = 4 Hasta  1 Con Paso -1 Hacer
                     escribir matriz[j,i] " " " " Sin Saltar 
@@ -205,16 +232,20 @@
 
 <h2>Ejercicio 56</h2>
 <h3>laberinto</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             //Definir mis Variables
             Definir laberinto Como Entero
+
             //Asignar la Dimension  de mi matriz
             Dimension laberinto[10,10]
+
             //Guardar la posicion original de donde empieza mi laberinto
             f_u = 1
             c_u= 9
+
             //Asignar valores a las posisiones donde ira mi camino
             laberinto[1,9] = 8
             laberinto[2,9] = 1
@@ -233,11 +264,14 @@
             laberinto[8,10]= 1
             laberinto[9,10]= 1
             laberinto[10,10]=1
+
             Repetir
                 //limpia lapantalla y muestra la posicion de donde se ubuca el jugador
                 Limpiar Pantalla
+
                 Escribir f_u
                 Escribir c_u
+
                 //USE UN PARA PARA ASIGNAR LOS CIEN VALORES A MI MATRIZ
                 Escribir 'Matriz original'
                 para i = 1 Hasta 10 Con Paso 1 Hacer
@@ -258,14 +292,17 @@
                     laberinto[f_u,c_u] = 1
                     f_u = f_u + 1
                 Finsi
+
                 si menu='2' Y laberinto[f_u,c_u - 1] <> 0 Entonces
                     laberinto[f_u,c_u] = 1
                     f_u = f_u - 1
                 FinSi
+
                 si menu='3' Y laberinto[f_u,c_u - 1] <> 0  Entonces
                     laberinto[f_u,c_u] = 1
                     c_u = c_u - 1
                 FinSi
+
                 si menu='4' Y laberinto[f_u,c_u +1] <> 0 Entonces
                     laberinto[f_u,c_u] = 1
                         c_u = c_u + 1
@@ -279,19 +316,23 @@
 
 <h2>Ejercicio 57</h2>
 <h3>busca minas</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
             Definir mapa,cantidad_minas Como Entero
             Definir perdio Como Logico
             Dimension mapa[10,10]
+
             cantidad_minas = Aleatorio(3,5)
             Escribir 'cantidad de minas ',cantidad_minas
+
             para mina=1 hasta cantidad_minas Con Paso 1 Hacer
                 fila_aleatorio = aleatorio(1,10)
                 columna_aleatorio= aleatorio(1,10)
                 mapa[fila_aleatorio,columna_aleatorio] = 5
             FinPara
+
             perdio = Falso
             Repetir
                 contador = 0
@@ -327,8 +368,10 @@
         Algoritmo sin_titulo
             definir rompecabezas, rompecabezas_resuelto Como entero
             Definir validadacion Como Logico
+
             Dimension rompecabezas[4,4]
             Dimension rompecabezas_resuelto[4,4]
+
             Para i = 1 Hasta 15 Con Paso 1 Hacer
                 Repetir
                     validacion = verdadero
@@ -340,6 +383,7 @@
                     FinSi
                 Hasta Que validacion = falso
             FinPara
+
             Repetir
                 completado = Verdadero
                 para f = 1 Hasta 4 Con Paso 1 Hacer
@@ -350,6 +394,7 @@
                 FinPara
                 Escribir 'Ingresa el numero que deseas mover'
                 Leer direccion
+
                 para f = 1 Hasta 4 Con Paso 1 Hacer
                     para c = 1  Hasta 4 Con Paso 1 Hacer
                         //Derecha
@@ -385,6 +430,7 @@
                         FinSi
                     FinPara
                 FinPara
+
                 contador = 0
                 Para i = 1 Hasta 4 Hacer
                     Para j = 1 Hasta 4 Hacer
@@ -398,6 +444,7 @@
                     FinPara
                 FinPara
             Hasta Que completado ==  Verdadero
+
             si completado == Verdadero Entonces
                 Escribir '¡Hasta luego!'
             FinSi
@@ -415,9 +462,12 @@
             Definir sudoku Como Entero
             Definir separador Como Caracter
             Definir existe Como logico
+
             Dimension sudoku[9,9]
+
         //	escribir 'Ingresa un numero'
         //	leer num
+
             para f = 1 Hasta 9 Con Paso 1 Hacer
                 para c = 1 Hasta 9 Con Paso 1 Hacer
                     para num = 1 Hasta 9 Con Paso 1 Hacer
@@ -473,7 +523,8 @@
                         c = 1
                     FinSi
                 FinPara
-            FinPara	
+            FinPara
+
             Para i = 1 Hasta 9 Con Paso 1 Hacer
                 Para j = 1 Hasta 9 Con Paso 1 Hacer
                     si j <> 3 y j <> 6 Entonces
@@ -493,8 +544,9 @@
 
 <br>
 
-<h2>Ejercicio 52</h2>
-<h3>eliminacion de doplicados</h3>
+<h2>Ejercicio 58</h2>
+<h3></h3>
+
 <pre>
     <code>
    </code>
