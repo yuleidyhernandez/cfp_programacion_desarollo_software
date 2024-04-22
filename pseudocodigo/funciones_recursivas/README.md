@@ -1,3 +1,5 @@
+## [ejercicios de 71 al 80](./71-80)
+
 1. Factorial:
 Define una función recursiva para calcular el factorial de un número entero positivo ( n ).
 2. Fibonacci:

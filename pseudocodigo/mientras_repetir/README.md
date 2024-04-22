@@ -1,3 +1,4 @@
+## [ejercicios de 21 al 30](./21-30)
 1. Contador Ascendente: Imprime los números del 1 al 10 en orden ascendente.
 2. Contador Descendente: Muestra los números del 10 al 1 en orden descendente.
 3. Suma de Números Positivos: Pide al usuario que ingrese números positivos

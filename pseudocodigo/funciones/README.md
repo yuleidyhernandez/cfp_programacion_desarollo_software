@@ -1,3 +1,5 @@
+## [ejercicios de 61 al 70](./61-70)
+
 1. Suma de dos números:
 Crea una función que reciba dos números como parámetros y devuelva la suma de
 ambos.

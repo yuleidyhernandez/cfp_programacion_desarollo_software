@@ -1,3 +1,5 @@
+## [ejercicios de 31 al 40](./31-40)
+
 1. Suma de Números: Utilizando un bucle PARA, sumar los números del 1 al 10 e
 imprimir el resultado.
 2. Tabla de Multiplicar: Usar un bucle PARA para mostrar la tabla de multiplicar de un
