@@ -36,10 +36,7 @@
 <pre>
     <code>
         Algoritmo sin_titulo
-            definir base como real 
-            definir altura como real 
-            definir area como real
-            definir perimetro como real
+            definir base,altura,area,perimetro como real 
             escribir "Ingresa la altura de tu rectangulo"
             leer altura
             escribir "Ingresa la base de tu rectangulo"
