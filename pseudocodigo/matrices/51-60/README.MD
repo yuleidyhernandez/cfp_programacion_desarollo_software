@@ -411,14 +411,13 @@
 <h3>sudoku</h3>
 <pre>
     <code>
-        Algoritmo sin_titulo
+        Algoritmo sudoku_
             Definir sudoku Como Entero
             Definir separador Como Caracter
             Definir existe Como logico
             Dimension sudoku[9,9]
         //	escribir 'Ingresa un numero'
         //	leer num
-            existe = Falso
             para f = 1 Hasta 9 Con Paso 1 Hacer
                 para c = 1 Hasta 9 Con Paso 1 Hacer
                     para num = 1 Hasta 9 Con Paso 1 Hacer
@@ -454,12 +453,12 @@
                                     inicioColumna = 7
                                 FinSi
                             FinSi
-                            para i = inicioFila  Hasta inicioFila Con Paso +2 Hacer
-                                para j = inicioColumna Hasta inicioColumna Con Paso +2 Hacer
+                            para i = inicioFila  Hasta inicioFila+2 Con Paso 1 Hacer
+                                para j = inicioColumna Hasta inicioColumna+2 Con Paso 1 Hacer
                                     si num == sudoku[i,j] Entonces
+                                        existe = Verdadero
                                         i = inicioFila +2
                                         j = inicioColumna +2
-                                        existe = Verdadero
                                     FinSi
                                 FinPara
                             FinPara
@@ -467,28 +466,27 @@
                                 sudoku[f,c] = num
                                 num = 9
                             FinSi
-                        Hasta Que existe = verdadero 
+                        Hasta Que existe == verdadero 
                     FinPara
                     si sudoku[f,c] == 0 Entonces
                         f = 1
-                        c=1
+                        c = 1
                     FinSi
                 FinPara
             FinPara	
-            Para f = 1 Hasta 9 Con Paso 1 Hacer
-                para c= 1 Hasta 9 Con Paso 1 Hacer  
-                    si c <> 3 y c <> 6 Entonces
-                        separador = ' '
+            Para i = 1 Hasta 9 Con Paso 1 Hacer
+                Para j = 1 Hasta 9 Con Paso 1 Hacer
+                    si j <> 3 y j <> 6 Entonces
+                        Escribir sudoku[i,j], " " Sin Saltar
                     SiNo
-                        separador=' |'
+                        Escribir sudoku[i,j], "|" Sin Saltar
                     FinSi
-                    Escribir sudoku[f,c],separador ' ' Sin Saltar
                 FinPara
-                Escribir ''
-                si f =3 o f = 6 Entonces
-                    Escribir '---------------------------'
+                Si i == 6 o i  == 3 Entonces
+                    Escribir " "
                 FinSi
-            FinPara
+                Escribir ""
+            Fin Para
         FinAlgoritmo
    </code>
 </pre>
