@@ -11,3 +11,5 @@
 ## [vectores](./pseudocodigo/vectores)
 
 ## [matrices](./pseudocodigo/matrices)
+
+## [funciones](./pseudocodigo/funciones)
