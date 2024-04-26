@@ -1,30 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+}
+
 .div_encabezado{
-    height: 70px;
-    width: 1000px;
-    background-color: black;
-    color: white;
+    color:white;
+    height: 10vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
-
 .logo{
-    height: 35px;
-    width: 35px;
-    margin-top: 8px;
-}
-
-.logo_titulo{
-    margin-left:40px;
-    margin-top: -25px;
+    height: 8vh;
+    width: 10vw;
     margin-right: 5px;
-}
-
-.select{
+} 
+.select_encabezado, .select{
+    display: flex;
+    flex-direction:row;
+    height: 20px;
+    margin-top: 10px;
     background-color: black;
     color: white;
+    align-content: space-between;
+    gap: 1rem;
 }
 
 .div_busqued{
+    display: flex;
+    margin-top: 10px;
+    gap: 1rem;
 
 }
 
+.cuerpo{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
+}
+
+.degradado-transparente{
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
+}
+
+.div_cuerpo{
+    height: 300px;  
+    margin-top: 100px;
+    
+}
+
+.texto_cuerpo{
+    width:30vw;
+    height: 35vh;
+    margin-top: 60px;
+    margin-left: -55px;
+    border-left: 5px solid white;
+    border-bottom:5px solid white ;
+   /*  position: relative; */
+    z-index: 1;
+}
+
+.texto{
+    width:50vw;
+    margin-left: 55px;
+    /* position:fixed;
+    z-index: ; */
+    color: white;
+}
+
+.botones{
+    margin-top: 15px;
+}
+
+.boton_uno{
+    background-color: black;
+    color: white;
+}
+
+.pie{
+    height: 23vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.pie_js, .angular{
+    height: 23vh;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+
+}
+
+.js{
+    height: 8vh;
+    margin-left: 210px;
+}
+
+
+
+.a{
+    height: 8vh;
+    margin-left: 210px;
+}
+
+.final{
+    color: white;
+}
