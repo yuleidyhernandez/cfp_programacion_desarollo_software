@@ -5,7 +5,9 @@
         Algoritmo sin_titulo
             definir valor1 como entero
             Definir  numero1 Como Entero
+
             Dimension numero1[5]
+
             para i = 1 Hasta 5 con paso 1 Hacer
                 escribir "Ingrese 5 numeros"
                 Leer numero1[i]
@@ -26,6 +28,7 @@
             Definir numeros1 Como real
             definir menor1,mayor1 Como real
             Dimension numeros1[8]
+
             numeros1[1]=11
             numeros1[2]=11.5
             numeros1[3]=10.5
@@ -34,15 +37,19 @@
             numeros1[6]=20
             numeros1[7]=15
             numeros1[8]=9
+
             mayor1 = numeros1[1]
             menor1 = numeros1[1]
+
             para i= 1 Hasta 8 Con Paso 1 Hacer
                 Si numeros1[i] > mayor1 Entonces
                     mayor1 = numeros1[i]
                 FinSi
+
                 si  numeros1[i] < menor1 Entonces
                     menor1 <- numeros1[i]
                 FinSi
+
             FinPara
             escribir "El numero mayor es: ",mayor1
             Escribir "El numero menor es: ",menor1
@@ -59,6 +66,7 @@
         Algoritmo sin_titulo
             definir promedio,califi, suma Como Entero
             Dimension promedio[10]
+
             promedio[1] = 5
             promedio[2] = 6
             promedio[3] = 9
@@ -69,6 +77,7 @@
             promedio[8] =4
             promedio[9] =8
             promedio[10]=7
+
             para i= 1 hasta 10 Con Paso 1 Hacer
                 suma = suma + promedio[i]
             FinPara
@@ -86,12 +95,14 @@
         Algoritmo sin_titulo
             Definir numeros1 como entero
             Dimension numeros1[6]
+
             numeros1[1]=7
             numeros1[2]=4
             numeros1[3]=3
             numeros1[4]=4
             numeros1[5]=5
             numeros1[6]=6
+
             para i= 1 Hasta 6 Con Paso 1 Hacer
                 si i % 2 = 0 Entonces
                     contador = contador +1
@@ -111,6 +122,7 @@
         Algoritmo sin_titulo
             Definir letra, abecedario Como Caracter
             Dimension abecedario[7]
+
             abecedario[1]= "a"
             abecedario[2]= "b"
             abecedario[3]= "c"
@@ -118,8 +130,10 @@
             abecedario[5]= "e"
             abecedario[6]= "f"
             abecedario[7]= "g"
+
             Escribir "Ingresa una letra"
             leer letra
+            
             para i= 1 Hasta 7 Con Paso 1 Hacer
                 escribir "entrae"
                 si letra == abecedario[i] Entonces

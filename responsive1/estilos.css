@@ -1,0 +1,30 @@
+.div_encabezado{
+    height: 70px;
+    width: 1000px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    height: 35px;
+    width: 35px;
+    margin-top: 8px;
+}
+
+.logo_titulo{
+    margin-left:40px;
+    margin-top: -25px;
+    margin-right: 5px;
+}
+
+.select{
+    background-color: black;
+    color: white;
+}
+
+.div_busqued{
+
+}
+
