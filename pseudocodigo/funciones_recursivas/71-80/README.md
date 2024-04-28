@@ -166,25 +166,81 @@
 
 <pre>
     <code>
-        Funcion torrehanoi(discos,t1,t2,t3)
-            si disco == 1 Entonces
-                escribir "se mueve disco de torre ", t1 " a ", t3;
-            SiNo
-                torrehanoi(discos-1,t1,t2,t3);
-                Escribir "se mueve disco de torre", t1 " a ", t3;
-                torrehanoi(discos-1,t2,t3,t1);
-            FinSi
+
+        Funcion torreoriginal(lastorres, altura)
+            definir i, j Como Entero
             
+            para i <- 2 Hasta indice Hacer
+                para j <- 1 Hasta  altura  Hacer
+                    lastorres[i,j] <- 0
+                    
+                FinPara
+            FinPara
+            para j <- 1 Hasta atura Hacer
+                lastorres[i,j] <- (altura - j) + 1
+            FinPara
         FinFuncion
 
-        Algoritmo sin_titulo
-            Definir discos, t1, t2, t3 Como Entero
-            t1 = 1
-            t2 = 2
-            t3 = 3
-            torrehanoi(3,t1,t2,t3);
+        Funcion iniciotorre(lastorres,altura)
+            Definir i,j Como Entero
             
+            para j <- altura Hasta 1 Con Paso -1 hacer
+                para i <- 1 hasta indice Hacer
+                    Escribir lastorres[i,j], " " Sin Saltar
+                FinPara
+                Escribir " "
+            FinPara
+            Escribir '---------------------------------------'
+        FinFuncion
+
+        Funcion traslado(lastorres, origen, destino,altura)
+            Definir uno1, dos1, aux1 Como Entero
+            uno1 <- altura
+            mientras uno1 > 1 y lastorres[origen, uno1] = 0 Hacer
+                uno1 <- uno1 - 1
+            FinMientras
+            dos1 <- altura + 1
+            
+            mientras dos1 < 1  y lastorres[destino, dos1 -1] = 0 Hacer
+                dos1 <- dos1 - 1
+            FinMientras
+            Escribir "traslado disco de origen ", origen " a ", destino 
+            lastorres[destino,dos1] <- lastorres[origen,dos1]
+            
+            lastorres[origen,dos1] <- dos1
+            iniciotorre[lastorres,altura]
+        FinFuncion
+
+        Funcion hanoi(alt,lastorres,origen, destino, auxiliar, altura)
+            //traslada el disco de la torreoriginal a la torredestino
+            si alt = 1 Entonces
+                traslado[lastorres,origen,destino,altura]
+                
+                //muebe las fichas menos la mas grande
+            SiNo
+                hanoi[alt -1, lastorres, origen,destino,auxiliar,altura]
+                //mueve  la ficha mas grande a la torre axuliaar
+                traslado[lastorres, origen, destino, altura]
+                
+                hanoi[alt -1, lastorres, auxiliar, origen, destino, altura]
+            FinSi
+        FinFuncion
+
+        Algoritmo torre_hanoi
+            Definir torres, altura, uno, aux, dos como entero
+            Dimension torres[indice,altura]
+            torreoriginal(torres, altura)
+            iniciotorre(torres,altura)
+            uno = 1
+            aux = 2
+            dos = 3
+            altura = 5
+            indice = 3
+            
+            hanoi(altura,torres,uno,aux,dos,altura)
+            iniciotorre(torres,altura)
         FinAlgoritmo
+
 
     </code>
 </pre>
@@ -236,6 +292,30 @@
 <h3>generacion de todas las permutaciones</h3>
 <pre>
     <code>
+        Funcion permutacion(uno, dos, num)
+            si (dos < tres ) Entonces
+                para i =dos Hasta num Hacer
+                    aux = uno[dos]
+                    uno[dos] = uno[i]
+                    uno[i] = aux
+                    permutacion(uno,dos + 1, num)
+                FinPara
+            sino 
+                para i = 1 Hasta num Hacer
+                    Escribir uno[i]
+                FinPara
+            FinSi
+        FinFuncion
+
+        Algoritmo sin_titulo
+            Dimension uno[5]
+            num = 5
+            para i = 1 Hasta 5 Hacer
+                uno[i] = azar(10)
+            FinPara
+            
+            permutacion(uno[], 1, num)
+        FinAlgoritmo
     </code>
 </pre>
 
