@@ -163,8 +163,29 @@
 
 <h2>Ejercicio 78</h2>
 <h3>torres de hanoi</h3>
+
 <pre>
     <code>
+        Funcion torrehanoi(discos,t1,t2,t3)
+            si disco == 1 Entonces
+                escribir "se mueve disco de torre ", t1 " a ", t3;
+            SiNo
+                torrehanoi(discos-1,t1,t2,t3);
+                Escribir "se mueve disco de torre", t1 " a ", t3;
+                torrehanoi(discos-1,t2,t3,t1);
+            FinSi
+            
+        FinFuncion
+
+        Algoritmo sin_titulo
+            Definir discos, t1, t2, t3 Como Entero
+            t1 = 1
+            t2 = 2
+            t3 = 3
+            torrehanoi(3,t1,t2,t3);
+            
+        FinAlgoritmo
+
     </code>
 </pre>
 
