@@ -1,33 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina responsive</title>
-    <link rel="stylesheet" media="only screen and (min-width:1024px)" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <!-- contenedor donde se encuentra todo lo relacionado con el encabezado de mi pagina web -->
     <header>
         <div class="div_encabezado">
             <div class="select_encabezado">
                 <img class="logo" src="imagenes/th.jpg" alt="logo">
- 
-                <select class="select" name="producto" id="producto">  
-                    <option value="uno">producto</option>
-                </select>
-                <select  class="select" name="Courses" id="Curses">
-                    <option value="dos">Curses</option>
-                </select>
-                <div class="select">View planes</div>
-                <select class="select"  name="Recursos" id="recursos">
-                    <option value="tres">Recursos</option>
-                </select>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <select class="select" name="producto" id="producto">
+                                <option value="uno">producto</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="select" name="Courses" id="Curses">
+                                <option value="dos">Curses</option>
+                            </select>
+                        </li>
+                        <li>
+                            <div class="select">View planes</div>
+                        </li>
+                        <li>
+                            <select class="select" name="Recursos" id="recursos">
+                                <option value="tres">Recursos</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="div_busqued">
-                <button  class="select" >🔍</button>
-                <select class="select"   name="sign in" id="sign in"><option value="sign">sing in</option></select>
-                <button  class="select" >Try for free</button>
+                <nav>
+                    <ul>
+                        <li class="lupa">
+                            <button class="select">🔍</button>
+                        </li>
+                        <li>
+                            <select class="select" name="sign in" id="sign in">
+                                <option value="sign">sing in</option>
+                            </select>
+                        </li>
+                        <li>
+                            <button class="select">Try for free</button>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -36,45 +62,43 @@
         <div class="degradado-transparente">
 
         </div>
-            <div class="uno">
-                <img class="div_cuerpo" src="imagenes/svg1.svg" alt="rosa">
-            </div>      
+        <div class="uno">
+            <img class="div_cuerpo" src="imagenes/svg1.svg" alt="rosa">
+        </div>
         <div class="texto_cuerpo">
             <div class="texto">
                 <h1>Tipo de rosas</h1>
-                <p>En busca de mejorar el aspecto, color y perfume de la rosa primigenia o rosa canina, hoy en día podemos distinguir tres grandes grupos de tipos de rosas: las silvestres, las antiguas y las modernas. Algunos ejemplos de nombres de rosas son banksiae, canina, centifolia, alba, noisettianos, floribunda, grandiflora y rosal </p>
+                <p>En busca de mejorar el aspecto, color y perfume de la rosa primigenia o rosa canina, hoy en día
+                    podemos distinguir tres grandes grupos de tipos de rosas: las silvestres, las antiguas y las
+                    modernas. Algunos ejemplos de nombres de rosas son banksiae, canina, centifolia, alba, noisettianos,
+                    floribunda, grandiflora y rosal </p>
                 <div class="botones">
                     <button class="boton_uno">VIEW PLANS</button>
                     <button class="boton_dos">TRY FOR FREE</button>
                 </div>
             </div>
         </div>
-
     </main>
     <!-- contenedor donde se encuentra todo lo relacionado con mi pagina web -->
-    <footer>
-        <div class="pie">
-            <div class="pie_js">
-                <div>
-                    <img class="js" src="imagenes/OIP (2).jpg" alt="js">
-                </div>
-    
-                <h1>JavaScript 11Courses</h1>
-                <h2>Take a look</h2>
-            </div>
+    <div class="cards">
+        <div class="card">
+                <img class="img" src="imagenes/OIP (2).jpg" alt="js">
 
-            <div class="angular"> 
-                <div>
-                    <img class="a" src="imagenes/th (1).jpg" alt="angular">
-                </div>
-                <h1>Angular 14Courses</h1>
-                <h2>Take a look </h2>
-            </div>
-
-            <div class="final">
-                <h1>Popular topics to learn now</h1>
-            </div>
+            <h1>JavaScript 11Courses</h1>
+            <h2>Take a look</h2>
         </div>
-    </footer>
+
+        <div  class="card">
+            <img class="img" src="imagenes/th (1).jpg" alt="Angular">
+
+            <h1>Angular 14Courses</h1>
+            <h2>Take a look </h2>
+        </div>
+
+        <div class="card">
+            <h1>Popular topics to learn now</h1>
+        </div>
+    </div>
 </body>
+
 </html>
