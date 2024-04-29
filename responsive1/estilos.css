@@ -1,10 +1,12 @@
+/* estilos de mi pagina */
 *{
     margin: 0;
     padding: 0;
 }
+/* estilos de todo lo que tiene el encabezado de mi pagina  */
 header{
     background-color: black;
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
 }
 
@@ -14,6 +16,7 @@ header{
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    margin-left: 35px;
 }
 .logo{
     height: 8vh;
@@ -27,7 +30,6 @@ header{
     margin-top: 10px;
     background-color: black;
     color: white;
-    align-content: space-between;
     gap: 1rem;
 }
 
@@ -35,9 +37,10 @@ header{
     display: flex;
     margin-top: 10px;
     gap: 1rem;
-
+    margin-right:115px;
 }
 
+/* estilos del contenido de mi pagina */
 .cuerpo{
     width: 100vw;
     height: 70vh;
@@ -86,13 +89,13 @@ header{
     color: white;
 }
 
+/* estilos de pie de mi pagina */
 .pie{
     height: 23vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     background-color: black;
-    justify-content: space-evenly;
 }
 
 .pie_js, .angular{
@@ -100,22 +103,40 @@ header{
     background-color: rgb(71, 69, 69);
     color: white;
     font-size: 15px;
-    margin-left: 5px;
+    margin-left: 80px;
 
 }
 
 .js{
     height: 8vh;
-    margin-left: 210px;
+    width: 5vw;
 }
 
 
 
 .a{
     height: 8vh;
-    margin-left: 210px;
+    width: 5vw;
+
 }
 
 .final{
     color: white;
+    height: 8vh;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+ /* responsive para daptar a un movil */
+@media screen and (max-width:767px) {
+    width: 767px;
+
+}
+/* medida para que se adapte a una tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+}
+/* medidas para quqe se adapte a una pantalla mas grande como pc  */
+@media screen and (min-width:1024px) {
+    
 }
