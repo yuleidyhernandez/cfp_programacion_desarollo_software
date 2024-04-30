@@ -133,53 +133,6 @@ h1, h2{
 
  /* responsive para daptar a un movil */
 @media screen and (max-width: 767px) {
-    .div_encabezado .select_encabezado nav, .div_encabezado .div_busqued{
-        display: none;
-    }
-
-    .logo{
-        width: 100%;
-    }
-
-    .cards{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .texto_cuerpo{
-        width: 25rem;
-        height: 15rem;
-        border: transparent;
-    }
-
-    .texto{
-        font-size: 1.5em;
-        height: 5rem;
-        width: 15rem;
-        z-index: 1;
-        position: absolute;
-    }
-    .botones{
-        font-size: 0.8em;
-    } 
-    .degradado-transparente{
-        /* position: relative; */
-        z-index: 1;
-        width: 23.5rem;
-        height: 70vh;
-        background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
-    }
-    .div_cuerpo{
-        z-index: 0;
-
-    }
-    
-}
-
-/* medida para que se adapte a una tablet */
-@media screen and (min-width:768px) and (max-width:1023px) {
     /* .div_encabezado .select_encabezado nav, .div_encabezado .div_busqued{
         display: none;
     }
@@ -196,16 +149,78 @@ h1, h2{
     }
 
     .texto_cuerpo{
-        height: 18rem;
+        height: 15rem;
         border: transparent;
     }
 
     .texto{
         font-size: 1em;
         height: 5rem;
+        z-index: 1;
+        position: absolute;
+    }
+    .botones{
+        font-size: 0.8em;
+    } 
+    .degradado-transparente{
+        z-index: 1;
+        height: 70vh;
+        background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
+
+    }
+    .div_cuerpo{
+        z-index: 0;
+
+    } */
+    
+}
+
+/* medida para que se adapte a una tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* body{
+        margin: 0;
+        padding: 0;
+    }
+    .div_encabezado .select_encabezado nav, .div_encabezado .div_busqued{
+        display: none;
+
+    }
+    header{
+        width: 64vw;
+    }
+ 
+    .logo{
+        width: 100%;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        width: 64vw;
+
+    }
+
+    .cuerpo {
+        width: 64vw;
+
+    }
+
+    .texto_cuerpo{
+        width: 8000vw;
+        height: 18rem;
+        border: transparent;
+
+    }
+
+    .texto{
+        font-size: 1.5em;
+        height: 5rem;
         width: 15rem;
         z-index: 1;
         position: absolute;
+        
     }
     .botones{
         font-size: 0.8em;
@@ -219,11 +234,128 @@ h1, h2{
     .div_cuerpo{
         z-index: 0;
     
-    }
-     */
+    } */
+    
     
 }
 /* medidas para quqe se adapte a una pantalla mas grande como pc  */
 @media screen and (min-width:1024px) {
+
+    header{
+        background-color: black;
+        height: 10%;
+        /* width: 100%; */
+    }
     
+    .div_encabezado{
+        color:white;
+        height: 100%;
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        margin-left: 35px;
+    }
+    .logo{
+        height: 8vh;
+        /* width: 10vw; */
+        margin-right: 5px;
+    }
+    
+    .div_encabezado ul{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    li{
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .select_encabezado, .select{
+        display: flex;
+        flex-direction:row;
+        height: 20px;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        gap: 1rem;
+    }
+    
+    .div_busqued{
+        display: flex;
+        margin-top: 10px;
+        gap: 1rem;
+        margin-right:115px;
+    }
+    
+    /* estilos del contenido de mi pagina */
+    .cuerpo{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
+    }
+    
+    .degradado-transparente{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(231deg, rgba(235,93,16,1) 0%, rgba(235,185,16,0.5382528011204482) 100%)
+    }
+    
+    .div_cuerpo{
+        height: 300px;  
+        margin-top: 100px;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .texto_cuerpo{
+        width:30vw;
+        height: 35vh;
+        margin-top: 60px;
+        margin-left: -55px;
+        border-left: 5px solid white;
+        border-bottom:5px solid white ;
+        position: relative;
+    
+    }
+    
+    .texto{
+        width:50vw;
+        margin-left: 55px;
+        position:static;
+        z-index: auto;
+        color: white;
+    }
+    
+    .botones{
+        margin-top: 15px;
+    }
+    
+    .boton_uno{
+        background-color: black;
+        color: white;
+    }
+    
+    .cards{
+        display: grid;
+        grid-template-columns: 25% 25% 40%;
+        gap: 5%;
+        background-color: #000;
+    }
+    
+    .card{
+        background-color: #817e7e;
+        height: 9rem;
+    }
+    
+    .img{
+        width: 5rem;
+        display: grid;
+    }
+    
+    h1, h2{
+     font-size:1.5em ;
+    }
 }
