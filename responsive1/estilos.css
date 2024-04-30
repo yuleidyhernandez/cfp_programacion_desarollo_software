@@ -118,12 +118,16 @@ li{
 
 .card{
     background-color: #817e7e;
-    height: 8rem;
+    height: 9rem;
 }
 
 .img{
     width: 5rem;
     display: grid;
+}
+
+h1, h2{
+ font-size:1.5em ;
 }
 
 /* estilos de pie de mi pagina
