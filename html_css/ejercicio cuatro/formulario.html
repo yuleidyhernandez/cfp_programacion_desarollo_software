@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <main> <!--Main donde esta el contenido de mi pagina-->
+        <h1>Formulario basico</h1>
+        <h2>Encuesta</h2>
+        <form class="formulario"> <!--Primera parte de mi formulario con label y input-->
+            <fieldset class="datos">
+                    <h1>Datos principales</h1>
+                    <legend class="titulo_encuesta">Encuesta sobre la educacion</legend><br>
+                    <label for="nombre">Nombres</label><br>
+                    <input type="text" placeholder="Ingresa tus Nombres"> <br><br>
+                    <label for="Apellido">Apellido</label> <br>
+                    <input type="text" placeholder="Ingresa tus apellidos"> <br><br>
+                    <label for="Direccion">Direccion</label> <br>
+                    <input type="text" placeholder="Ingresa tu Direccion"> <br> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="text" placeholder="Ingresa tu correo electronico"> <br> <br>
+                    <label for="Telefono">Telefono</label> <br>
+                    <input type="text" placeholder="Ingresa tu numero de Telefono"><br><br>
+            </fieldset>
+            <fieldset class="carrera">
+                    <!--Segunda parte de mi formulario usando selecte que me ayudara a con una lista opciones desplegables -->
+                    <h1>Opcion de carreras</h1> <br>
+                    <label for="texto">Que te gustaria estudiar</label> <br><br>
+                    <select>
+                        <option value="texto">Agronomia</option>
+                        <option value="texto">Magisterio</option>
+                        <option value="texto">Doctor</option>
+                        <option value="texto">Enfermeria</option>
+                        <option value="texto">Beterinario</option>
+                        <option value="texto">Odontologo</option>
+                        <option value="texto">Optanmologo</option>
+                    </select>
+                    <br><br><label for="texto">Porque te gustaria estudiar esa carrera</label> <br><br>
+                    <input type="texto" placeholder="Escribe tu respuesta"> <br> <br>
+            </fieldset>
+            <fieldset class="turno">
+                    <!--Tercera parte de mi formulario usando checkbox para marcar con un chequesito mi opcion -->
+                    <h1>Eligue tu turno a convenir</h1>
+                    <label for="texto">En que horario te gustaria estudiar</label> <br><br>
+                    <label for="texto">Matutino</label>
+                    <input type="checkbox">
+                    <label for="texto">Vespertino</label>
+                    <input type="checkbox">
+                    <label for="texto">Nocturno</label>
+                    <input type="checkbox"> <br><br>
+            </fieldset>
+            <fieldset class="comentario">
+                    <!--Cuarta parte de mi formulario usando textarea para que escriban un comentario-->
+                    <h1>Comentario</h1>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                        placeholder="Algun comentario para agregar a nuestra encuesta; o que te parecio nuestra encuesta"></textarea>
+                    <br><br>
+                <button class="enviar">enviar</button>
+                <!--Quinta parte de mi formulario usando buton para el boton de envio-->
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

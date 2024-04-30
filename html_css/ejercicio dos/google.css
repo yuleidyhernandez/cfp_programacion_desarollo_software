@@ -1,0 +1,93 @@
+/*Estilos de mi imagen google*/
+.imagen{
+    width: 15em;
+    margin-left: 35em; 
+    margin-top: 5%; 
+}
+/*Estilos de la imagen de don bosco*/
+h1{
+    margin-left: 20%;
+}
+.bosco{
+    width: 10%;
+    height: 10%;
+    margin-top: -8%;
+    margin-bottom: 8%;
+    margin-left: 8%;
+}
+
+.uno{
+    border-radius: 75%;
+    width: 50%;
+    height: 50%;
+    margin-left: 12%;
+    margin-top: 5;
+}
+
+/*Estilos de notificacion y configuracion*/
+
+.campanilla{
+    width: 8%;
+    height: 5%;
+    margin-top: -15%;
+    margin-bottom: 8%;
+    margin-left: 80%;
+}
+.campana{
+    border-radius: 75%;
+    width: 50%;
+    height: 50%;
+    margin-left: 12%;
+    margin-top: 5;  
+}
+
+.configuracion{
+    width: 3%;
+    height: 3%;
+    margin-top: -13%;
+    margin-bottom: 15%;
+    margin-left: 90%;
+}
+.linea{
+    border-radius: 75%;
+    width: 2%;
+    height: 2%;
+    margin-left: 15%;
+    margin-top: 15%;  
+}
+
+/*Estilos de mi div principal:*/
+.principal{
+    width:50em;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20em;
+    margin-top: -15%;
+    margin-bottom: 5%;
+    
+}
+/*Estilos de mi lupa para el buscador*/
+.lupa{
+ width: 3em;
+ height: 2.5em;
+ margin-left: 10em;
+ margin-top: 2em;
+}
+/*Estilos de mi buscador donde ingresaran los que ban a buscar*/
+.buscador{
+    width: 25em;
+    height: 2em;
+    margin-left: -0em;
+    margin-top: 2em;
+}
+/*Estilos del microfono del muscador */
+.microfono{
+    width: 3em;
+    height: 2.5em; 
+    margin-top: 2em;
+
+}
+
+
+

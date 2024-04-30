@@ -1,0 +1,25 @@
+/*Estilos del body */
+body{
+    background-color: aquamarine;
+}
+/*Estilos del header */
+
+header{
+    font-size: medium;
+    color: blue;
+    background-color: cadetblue;
+}
+
+/*Estilos del section*/
+section{
+    font-size: medium;
+    color: brown;
+    background-color: burlywood;
+}
+
+/*Estilos del footer*/
+footer{
+    font-size: large;
+    color:  crimson;
+    background-color: cornflowerblue;
+}

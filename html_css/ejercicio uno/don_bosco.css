@@ -1,0 +1,43 @@
+/*Estilos de mi foother*/
+.caja{
+border: 2px solid black;
+width: 95%;
+height: 150px;
+background-color:aquamarine;
+padding: 25px;
+}
+/*Estilos de mi h1 o titulos principales*/
+h1 {
+    font-size:xx-large ;
+    color: black; 
+}
+/*Estilos de mi h2 o titulos secundarios*/
+h2 {
+    margin-left: 55%;
+}
+/*Estilos de mi imagen */
+img {
+   max-width: 100%;
+   max-height: 100%;
+   border: 3px solid blue;
+   margin-right: 45%;
+
+}
+
+/*Estilos del contenido de don bosco*/
+.vidabosco{
+    margin-left: 50%;
+    margin-top: -15%;
+    margin-bottom: 8%;
+
+}
+/*Estilos de mi pie de pagina*/
+.caja1 {
+    border: 2px solid black;
+    width: 95%;
+    height: 150px;
+    background-color:aquamarine;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}

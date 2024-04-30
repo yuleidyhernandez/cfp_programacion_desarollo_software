@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio6.css">
+</head>
+<body>
+   
+    <header class="cabeza">   <!--Etiqueta del encabezado del encabezado de nuestra pagina web-->
+        <h1>Formulario simple</h1>
+    </header>
+ 
+    <form>    <!--Etiqueta que especifica que aremos un formulario-->
+        
+        <fieldset class="formulario"> <!--Etiqueta que nos marcara el cuadra al rededor de las etiquetas dentro de nuestro fielset -->
+
+            <legend >Formulario</legend> <!--Etiqueta que da el titulo de nuestro formulario-->
+            <h2>Datos</h2>
+            <label for="nombre">nombre</label><br> <!--Etiqueta donde-colocamos lo que vamos a preguntar-->
+            <input class="campo_texto" type="text" placeholder="ingresa tu nombre"><br><br> <!--Etiqueta donde el usuario ingresa lo antes pedido-->
+            <label for="edad" >Edad</label><br>
+            <input class="campo_texto" type="number" placeholder="ingresa tu edad"><br><br>
+            <label for="email">Email</label><br>
+            <input class="campo_texto" type="text" placeholder="ingresa tu email"><br><br>
+            <label for="telefono">Telefono</label><br>
+            <input class="campo_texto"  type="number" placeholder="ingresa tu numero de telefono"><br><br>
+            <label class="campo_texto" for="submit" value="enviar"><button>enviar</button></label>
+        </fieldset> <!--Etiqueta de cierre de fielset-->
+    </form> <!--Etiqueta de cierre de formulario-->
+</body>
+</html>

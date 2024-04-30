@@ -1,0 +1,32 @@
+/*Estilos de mi body*/
+body{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    background-color: rgb(238, 183, 144);
+}
+/*estilos de los puntos que ban abajo de  wikipedia*/
+.puntos{
+    font-size: 5vh;
+}
+
+/*Estilos de mi lista  que va en navegacion*/
+.lista{
+    display: flex;
+    flex-direction: row;   
+}
+
+/*Estilos de mi lista*/
+ol{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+margin-left: 10%; 
+}
+
+
+.li:hover{
+    background-color:chocolate;
+}

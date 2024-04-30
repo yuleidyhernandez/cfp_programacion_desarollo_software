@@ -1,0 +1,19 @@
+body{
+    width: 800px;
+    height: 600px;
+    background-color: chocolate;
+}
+
+.titulo{
+    font-size:x-large;
+    margin-left: 75%;
+    width: 80%;
+}
+
+.imagen{
+    height: auto;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 60%;
+    margin-bottom: 10%;
+}

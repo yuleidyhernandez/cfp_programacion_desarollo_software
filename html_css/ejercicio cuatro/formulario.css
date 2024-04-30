@@ -1,0 +1,58 @@
+/*Estilos de mi main*/
+main{
+    width: auto;
+    height: auto;
+}
+
+/*Estilos de mi formulario*/
+.formulario{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid black;
+}
+.titulo_encuesta{
+    font-size: 2em ;
+    text-align: justify;
+    margin-right: -15em;
+
+}
+/*Estilos de mi primera parte de mi formulario*/
+.datos{
+    margin-right: 3em;
+    margin-left: 3em;
+    border: 1px solid white;
+
+}
+
+/*Estilos de mi segunda parte de mi formulario*/
+.carrera{
+    margin-right: 3em;
+    border: 1px solid white;
+    margin-top: 5em;
+}
+
+/*Estilos de mi tercera parte de mi formulario*/
+.turno{
+    margin-right: 2em;
+    border: 1px solid white;
+    margin-top: 5em;
+
+}
+/*Estilos de mi cuarta parte de mi formulario*/
+.comentario{
+    margin-right: 5em;
+    border: 1px solid white;
+    margin-top: 5em;
+
+}
+
+/*Estilos de mi quienta parte de mi formulario*/
+.enviar{
+    height: 5em;
+    border-radius: 3em;
+    border: dotted rgb(252, 3, 3);
+    margin-top: 5em;
+    margin-left: 5em;
+    background-color: rgb(219, 98, 122);
+    
+}

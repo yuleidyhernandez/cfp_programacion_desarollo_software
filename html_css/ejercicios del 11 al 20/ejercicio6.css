@@ -1,0 +1,35 @@
+/*Estilos de body de nuestra pagina web*/
+body{
+    background-color: antiquewhite;
+    width: auto;
+    height: auto;
+}
+/**/
+.cabeza:hover{
+    background-color: chartreuse;
+}
+/**/
+.cabeza{
+    margin-left: 37%;
+}
+
+.formulario{
+    border: 10px blue dotted;
+    padding: 2%;
+    width: auto;
+    margin-left: 40%;
+    margin-right: 25%;
+    text-align: center;  
+}
+
+[Type]{
+    color: chocolate;
+}
+
+.formulario :hover{
+    background-color: aqua;
+}
+
+.campo_texto{
+    border:5px dashed;
+}
