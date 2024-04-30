@@ -9,13 +9,23 @@ main{
 .titulo{
     margin-left: 28%;
 }
-.uno{
+.uno1{
     width: 400px;
+}
+
+.uno{
+    width: 350px;
+    margin-left: 35%;
 }
 
 .lista{
     display: flex;
     flex-direction: row;
+    /* margin-left: 10%; */
+}
+
+.dos{
+    margin-left: 15%;
 }
 
 .l1{
