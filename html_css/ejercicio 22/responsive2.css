@@ -67,7 +67,7 @@ li{
 }
 .anuncio_viajes{
     width: 20vw;
-    height: 15vh;
+    height: 18vh;
     background-color:white; 
     color: black;
     font-size: 0.8em;
@@ -85,6 +85,7 @@ li{
 .texto_anuncio{
     margin-left: 55px;
     margin-top: -25px;
+    font-size: 1.5em;
 }
 
 .icono{
@@ -156,4 +157,46 @@ button{
     border-radius: 15px;
     background-color: rgb(233, 37, 37);
     color: white;
+}
+
+.discapacidad{
+    display: flex;
+    gap: 25px;
+}
+
+.especificaciones{
+    margin-left: 5%;
+}
+
+section{
+    height: 52vh;
+    background-color:rgba(128, 128, 128, 0.384);
+}
+
+.otras_opciones{
+    display: flex;
+    gap: 3%;
+    margin: 4%;
+}
+
+.vuelos{
+    width: 15vw;
+    background-color: blueviolet;
+    gap: 5%;
+}
+
+.img{
+    width: 15vw;
+    height: 25vh;
+    
+}
+
+.h6{
+    margin-top: 25px;
+    font-size: 1em;
+    gap: 2px;
+}
+
+.h1{
+    font-size: 1.3em;
 }
