@@ -59,6 +59,11 @@ li{
     margin-right:115px;
 }
 
+.menu{
+    margin-top: 13px;
+    display: none;
+}
+
 /* estilos del contenido de mi pagina */
 .cuerpo{
     width: 100%;
@@ -133,13 +138,24 @@ h1, h2{
 
  /* responsive para daptar a un movil */
 @media screen and (max-width: 767px) {
-    /* .div_encabezado .select_encabezado nav, .div_encabezado .div_busqued{
+   .div_encabezado .select_encabezado nav, .div_encabezado .div_busqued{
         display: none;
     }
 
     .logo{
         width: 100%;
     }
+
+    .menu{
+    display:block;
+
+}
+
+    .lupa{
+    display: block;
+    z-index: 1;
+ }
+
 
     .cards{
         display: flex;
@@ -171,13 +187,13 @@ h1, h2{
     .div_cuerpo{
         z-index: 0;
 
-    } */
+    }
     
 }
 
 /* medida para que se adapte a una tablet */
 @media screen and (min-width:768px) and (max-width:1023px) {
-    /* body{
+    body{
         margin: 0;
         padding: 0;
     }
@@ -234,7 +250,7 @@ h1, h2{
     .div_cuerpo{
         z-index: 0;
     
-    } */
+    }
     
     
 }
