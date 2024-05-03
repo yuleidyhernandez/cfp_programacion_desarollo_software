@@ -295,6 +295,7 @@ button{
     }
 
     .formulario_viaje{
+        height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -302,10 +303,9 @@ button{
     }
 
     .input{
-        width: 5vw; 
-        height: 3vh;
-        margin-top: 10px;
-    
+        width: 50vw; 
+        height:15vh;
+
     }  
     p{
         display: none;
@@ -313,16 +313,16 @@ button{
     }
     
    .input1{
-         width: 8vw; 
+        width: 50vw; 
         height: 3vh;
         margin-left: -128px;
         margin-top: 10px;
     } 
     
     button{
-        /* width: 5vw; */
+        width: 50vw;
         height: 5vh;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         border-radius: 15px;
         background-color: rgb(233, 37, 37);
         color: white;
