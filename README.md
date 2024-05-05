@@ -42,3 +42,6 @@
 ## [Ejercicio 22 ](./html_css/ejercicio%2022/)
 
 ## [Ejercicio 23 ](./html_css/ejercicio%2023/)
+
+## [Ejercicio 24 ](./html_css/ejercicio%2024/)
+
