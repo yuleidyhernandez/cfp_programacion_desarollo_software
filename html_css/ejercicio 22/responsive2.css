@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@
 }
 nav{
     background-color:white;
-    width: 99vw;
+    width: 50%;
     height: 55vh;
 }
 
@@ -203,7 +203,7 @@ button{
 .otras_opciones{
     display: flex;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .vuelos{
@@ -223,9 +223,9 @@ button{
 
 .h1{
     font-size: 1.3em;
-}
+} 
 /*  pantallas moviles */
-@media screen  and (max-width:767px) {
+ @media screen  and (max-width:767px) {
 
     body{
         margin: 0;
@@ -239,28 +239,8 @@ button{
         height:75vh;
     }
 
-    .anuncio_coronavirus{
-        width: 100vw;
-        height: 5vh;
-        font-size: 0.8em;
-        background-color: rgba(137, 43, 226, 0.301);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav{
-        background-color:white;
-        width: 100vw;
-        height: 10vh;
-        display: flex;
-        flex-direction: row;
-        font-size: 0.5em;
-    }
-
     .despegar{
-        width: 45%;
+        width: 105%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -344,54 +324,11 @@ button{
         margin-top: 10em;
     }
 
-}
+} 
+
  /* pantallas de tablets */
-@media screen and(min-width:168px) and (max-width:1024px) {
+/* @media screen and(min-width:168px) and (max-width:1024px) {
 
-    .anuncio_coronavirus,ul, .anuncio_viajes,.formulario_viaje{
-        display: none;
-    }
 
-    body{
-        margin: 0;
-        padding: 0;
-    }
 
-    nav{
-        background-color:aqua;
-        width: 100vw;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        font-size: 0.5em;
-    }
-
-    .despegar{
-        width: 45%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    ul{
-        width: 35vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    } 
-    #ayuda{
-        display: none;
-    } 
-  
-    .h2{
-        z-index: -1;
-    }
-    .nav_2{
-        height: auto;
-        width: 100vw;
-        margin-top: -20px;
-    }
-
-}
+} */
