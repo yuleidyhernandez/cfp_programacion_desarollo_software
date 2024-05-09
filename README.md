@@ -45,3 +45,4 @@
 
 ## [Ejercicio 24 ](./html_css/ejercicio%2024/)
 
+## [Ejercicio 25](./html_css/ejercicio%2025/)
