@@ -12,14 +12,18 @@ body {
 
 .div1{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-between; 
+
 }
+
 .twitter{
-    width: 25%;
+    width: 60%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content:end;
+    gap: 25px;
+
 }
 
 .twitter-circle{
@@ -33,8 +37,6 @@ body {
 
 }
 
-
-
 ul {
     width: 25%;
     height: auto;
@@ -42,6 +44,7 @@ ul {
     align-items: center;
     justify-content:center;
     list-style: none;
+
 }
 
 h1{
@@ -56,29 +59,140 @@ h1{
 
 .div2{
     width: 13rem;
-    height: 25rem;
     display: flex;
     justify-content: end;
     align-items: flex-start;
-    margin-top: -50px;
+    position: absolute;
 }
 
 .img{
     width: 50%;
-    height:auto;
-    align-items: start;  
-
+    height:15rem;
 }
 
 .logo{
     width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
+    height: 100%;
+    display: grid;
 }
 
 .logo_big{
     width: 50%;
     height: auto;
+    justify-self: center;
+    align-items: start;
 
+}
+
+.iconos{
+    width: 25%;
+    height: 18rem;
+    display: grid;
+    align-items: flex-start;
+    margin-top: -20%;
+    justify-content: space-around;
+}
+
+h1{
+    justify-self: flex-start;
+}
+.cuadro1{
+    width: 10rem;
+    height: auto;
+    justify-self: center;
+}
+
+.label1{
+    width: 12rem;
+    height: 2rem;
+    border: 3px solid white;
+    display: flex;
+}
+
+i{
+    font-size: 2em;
+}
+
+.form{
+    width: 20rem;
+    height: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.form1{
+    width: 10rem;
+    height: auto;
+    display: flex;
+    padding: 2%;
+}
+
+span{
+    padding: 2%;
+}
+
+label{
+    width: 2.8rem;
+    height: 2rem;
+    border: 3px solid white;
+    display: flex;
+    padding: 2%;
+}
+
+.flor{
+    background-image: url("hiro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid white;
+    width: 13rem;
+    height: 6vh;
+    justify-self: center;
+    margin-left: 3rem;
+}
+
+.circulo{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+}
+
+.derecha{
+    width: 80VW;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+section{
+    display:grid;
+    position: absolute;
+}
+
+nav{
+    width: 89vw;
+    height: 45vh;
+    display: flex;  
+    justify-content: end;
+    align-items: end;
+}
+.uno {
+    width: 5vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:100%;
+    border: 3px solid white;
+
+}
+
+.dos{
+    width: 4vw;
+    height: 8vh;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.dos1{
+    
 }
