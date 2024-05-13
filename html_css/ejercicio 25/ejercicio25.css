@@ -166,15 +166,23 @@ label{
 section{
     display:grid;
     position: absolute;
+    padding-left: 83%;
 }
 
 nav{
-    width: 89vw;
-    height: 45vh;
+    width: 15vw;
+    height: 85vh;
     display: flex;  
-    justify-content: end;
-    align-items: end;
+    justify-content:center;
+    align-items: center;
 }
+
+.nav_div1{
+    display: flex;
+    transform: rotate(-90deg);
+
+}
+
 .uno {
     width: 5vw;
     height: 10vh;
@@ -191,8 +199,40 @@ nav{
     height: 8vh;
     border-radius: 100%;
     border: 3px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .dos1{
-    
+    border: 3px solid white;
+    height:1vh;
+    width: 1vw;
+    border-radius: 100%;
+}
+
+.dos2{
+    border: 3px solid white;
+    height:1vh;
+    width: 1vw;
+    border-radius: 100%;
+}
+
+.dos3{
+    background-color: white;
+    border: 3px solid white;
+    height:1vh;
+    width: 1vw;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+} 
+.nav_div2{
+    background-color: aquamarine;
+    width: 45px;
+    height: 20px;
+    padding:0% ;
 }
