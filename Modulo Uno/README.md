@@ -47,5 +47,3 @@
 
 ## [Ejercicio 25](./html_css/ejercicio%2025/)
 
-<h1>NUBE</h1>
-# cfp_programacion_desarollo_software
