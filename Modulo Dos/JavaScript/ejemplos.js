@@ -129,3 +129,73 @@ function city(objeto) {
     // → Toronto
     console.log(city({address: { name: "Vera"}}));
     // → undefined
+
+
+
+    // abstraccion
+
+    function repeat(n, action) {
+        for (let i = 0; i < n; i++) {
+        action(i);
+        }
+        }
+    
+    let etiquetas = [];
+    repeat(5, i => {
+    etiquetas.push(`Unidad ${i + 1}`);
+    });
+
+    ["A", "B"].forEach(l => console.log(l));
+
+
+    function repeatLog(n) {
+        for (let i = 0; i < n; i++) {
+        console.log(i);
+        }
+    }
+    
+    function repeat(n, action) {
+        for (let i = 0; i < n; i++) {
+        action(i);
+        }
+        }
+    
+    let etiquetas = [];
+    repeat(5, i => {
+    etiquetas.push(`Unidad ${i + 1}`);
+    });
+    
+    let myArray =["a","b","c"];
+    myArray.forEach(i =>{console.log(i)});
+    
+    ["A", "B"].forEach(l => console.log(l));
+    
+    let estudiante = [{
+        name: "Manuel",
+        age : 20
+    },
+    {
+        name:"Luis",
+        age:22
+    },
+    {
+    name: "Dayana",
+    age: 20
+    }];
+    
+    let estudiantesDeVeinte = estudiante.filter(estudiante => estudiante.age == 20);
+    
+    let nombreEstudiante = estudiantesDeVeinte.map(estudiante => estudiante.name);
+    
+    console.log(nombreEstudiante);
+    console.log(estudiantesDeVeinte);
+    
+    function characterCount(script) {
+        return script.ranges.reduce((count, [from, to]) => {
+        return count + (to - from);
+        }, 0);
+        }
+        console.log(SCRIPTS.reduce((a, b) => {
+            return characterCount(a) < characterCount(b) ? b : a;
+            }));
+            // → {name: "Han", …}    
