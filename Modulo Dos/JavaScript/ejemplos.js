@@ -199,3 +199,61 @@ function city(objeto) {
             return characterCount(a) < characterCount(b) ? b : a;
             }));
             // → {name: "Han", …}    
+
+            // clases
+class Lavadora{
+    constructor(tamanio, capacidad,marca,modelo,tipo){// poner parametros
+        this.tamanio= tamanio,
+        this.capacidad= capacidad,
+        this.marca= marca,
+        this.modelo= modelo,
+        this.tipo= tipo
+    }
+    lavar(){
+        console.log("Esta lavando")
+    }
+    exprimer(){
+        console.log("Esta exprimiendo")
+    }
+    enjuagar(){
+        console.log("Esta enjuagando")
+    }
+
+}
+
+// instanciar
+// let lavadora = new Lavadora();
+// console.log(lavadora) /// imprime un objeto;
+
+// como llamar un objeto
+// lavadora.lavar();
+// lavadora.exprimer();
+// lavadora.enjuagar();
+
+// poner propiedades
+let lavadora = new Lavadora("15 pies","45 lbs","lm20","Samsung","electrica");
+console.log(lavadora)
+
+class Lavadora{
+    constructor(tamanio, capacidad,marca,modelo,tipo){// poner parametros
+        this.tamanio= tamanio,
+        this.capacidad= capacidad,
+        this.marca= marca,
+        this.modelo= modelo,
+        this.tipo= tipo
+    }
+    lavar(cantidad){
+        let total = cantidad * 1;
+        console.log(total < Lavadora.capacidad ? "Se esta lavando la ropa":"Exeso de ropa")
+    }
+    exprimer(){
+        console.log("Esta exprimiendo")
+    }
+    enjuagar(){
+        console.log("Esta enjuagando")
+    }
+
+}
+
+let lavadora = new Lavadora("15 pies",45,"lm20","Samsung","electrica");
+lavadora.lavar(15);
