@@ -1,4 +1,4 @@
-// promedio por columna
+// promedio por columna  52
 let matriz = [
     [4,8,9,12],
     [5,7,12,10],

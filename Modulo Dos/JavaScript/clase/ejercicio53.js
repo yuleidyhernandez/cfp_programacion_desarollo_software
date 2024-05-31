@@ -1,4 +1,4 @@
-// suma de diagonales
+// suma de diagonales 53
 
 let matriz = [
     [5,3,4,6,8],
