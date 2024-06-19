@@ -65,15 +65,15 @@ INSERT INTO detalle_pedido VALUES(1,5,2);
 INSERT INTO detalle_pedido VALUES(1,6,2);
 
 -- Consulta de productos y categoria
-
---SELECT * FROM productos, categorias 
+SELECT productos.id,productos.nombre_producto,categorias.nombre FROM productos JOIN
+categorias ON categoria_id = categorias.id ORDER BY categorias.id;
 
 --mostrar el gasto total por cada cliente
+SELECT pedidos.id,pedidos.cliente_id, sum(detalle_pedido.cantidad * producto.precio)
+AS total_gastado FROM detalle_pedido JOIN cliente.nombre 
 
-SELECT SUM(cantidad) AS sum_cantidad FROM detalle_pedido
+--SELECT SUM(detalle_pedido.cantidad*producto.precio) AS sum_cantidad FROM detalle_pedido JOIN clientes.nombre FROM detalle_pedido
+
 
 --conocer el producto mas vendido
-
-SELECT 
---SELECT * FROM detalle_pedido
 --DROP TABLE clientes
