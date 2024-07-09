@@ -9,13 +9,15 @@
   <title>Maquetacion de pagina</title>
 </head>
 
-<body class="flex flex-col bg-black justify-center items-center  ">
+<body
+  class="flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 from-0.25%  via-violet-950 via-100%">
 
-  <header class="flex h-24 w-10/12 justify-center bg-violet-50">
-    <nav class="h-14 w-11/12 flex justify-center items-center">
-      <ul class="flex gap-x-8 text-lg ">
+  <header
+    class="flex h-24 w-10/12 justify-center bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100% text-white opacity-75 ">
+    <nav class="h-14 w-11/12 flex justify-center items-center ">
+      <ul class="flex gap-x-8 text-lg relative ">
         <li class="flex gap-x-2 ">
-          <h1>RELAP</h1> <input class="rounded-md border-2 border-gray-400 " type="text" placeholder="Buscar">
+          <h1>RELAP</h1> <input class="rounded-md border-2 border-gray-400 text-black" type="text" placeholder="Buscar">
         </li>
         <li>
           <p>lorem</p>
@@ -48,25 +50,133 @@
     </nav>
   </header>
 
-  <main class="flex  gap-x-4 bg-violet-50 h-screen w-10/12">
-    <section class="flex justify-around bg-green-300 h-3/6 w-screen items-center  ">
-      <div>
-        <i class="bi bi-arrow-left-circle text-5xl"></i>
+  <main class="gap-x-4 h-screen w-10/12 opacity-75 shadow-2xl shadow-black flex-col ">
+    <section class=" flex justify-around h-80  items-center overflow-hidden bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100%">
+      <div class="border-white">
+        <i class="bi bi-arrow-left-circle text-3xl text-white "></i>
       </div>
-      <div class="h-4/5 w-94 z-0 ">
-        <img class="h-screen w-11/12 relative flex" src="imagenes/Laptop.png" alt="laptop">
+      <div class="h-80 w-94 z-0 ml-24 bsolute">
+        <img class="h-96 w-94 flex" src="imagenes/Laptop.png" alt="laptop">
       </div>
-      <div class="gap-y-4 h-32 flex flex-col z-10">
-        <p>lorem lorem</p>
-        <p class="text-4xl h-64 flex w-56">Ut labore et dolore</p>
-        <button class="w-20 h-8 bg-orange-300 rounded-lg border-orange-400 text-white ">lorem</button>
+      <div class="gap-y-4 mr-28 h-32 flex flex-col z-10 mb-24">
+        <p class="text-xl">lorem lorem</p>
+        <p class="text-4xl h-72 flex w-56">Ut labore et dolore</p>
+        <button
+          class="w-20 h-16 bg-orange-300 rounded-lg border-orange-400 text-white flex justify-center items-center text-lg ">Comprar</button>
       </div>
-      <div>
-        <i class="bi bi-arrow-right-circle text-5xl"></i>
+      <div class="border-white">
+        <i class="bi bi-arrow-right-circle text-3xl text-white"></i>
       </div>
-
     </section>
 
+    <section class="h-32  bg-violet-100 flex justify-center items-center ">
+      <ul class="flex w-11/12 gap-x-8 justify-around">
+        <li class="h-28 w-72 flex gap-4 justify-center">
+          <i class="bi bi-truck text-3xl"></i>
+          <div>
+            <h1 class="text-lg font-bold">Quis mostrued</h1>
+            <p class="text-base">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </li>
+        <li class="h-28 w-72 flex gap-4 justify-center">
+          <i class="bi bi-arrow-repeat text-3xl"></i>
+          <div>
+            <p class="font-bold">Exercitation</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </li>
+        <li class="h-28 w-72 flex gap-4 justify-center">
+          <i class="bi bi-person-circle text-3xl"></i>
+          <div>
+            <p class="font-bold">Lorem, ipsum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </li>
+        <li class=" h-28 w-72 flex gap-4 justify-center">
+          <i class="bi bi-backpack3-fill text-3xl"></i>
+          <div>
+            <p class="font-bold">Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="h-full bg-white text-base w-full">
+      <div class="flex justify-center items-center flex-col h-44 ">
+        <p class="font-bold text-xl">Lorem, ipsum.</p>
+        <p class="font-bold text-3xl">Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, quam?</p>
+      </div>
+
+      <div class="flex justify-around h-screen gap-2 text-sm">
+
+        <div class="h-4/5 w-8/12 ml-16">
+          <img class="w-44 h-48" src="imagenes/cel-redmi.jpg" alt="">
+          <p>CELULAR REDMI 13C 4GB 128GB 2SIM 6.74"
+            50MP NEGRO US</p>
+          <p><i class="bi bi-shield-fill-check"></i>6 Meses de garantía</p>
+          <p><i class="bi bi-shop"></i>Código Intelaf: cel-xi-13c412nu</p>
+          <p><i class="bi bi-aspect-ratio"></i>MPN: 23100RN82L-4+128BLK-US</p>
+          <p class="font-bold">Precio normal Q952</p>
+          <p class="font-bold"> Promo TecnoBONO Q857</p>
+        </div>
+
+        <div class="h-4/5 w-8/12">
+          <img class="w-44 h-48" src="imagenes/cel-sam-.jpg" alt="">
+          <p>CELULAR SAMSUNG A05 PANTALLA 6.7"
+            4GB RAM 128GB ALMACENAMIENTO 50MP
+            CAMARA DUAL SIM COLOR VERDE</p>
+          <p><i class="bi bi-shield-fill-check"></i>6 Meses de garantía</p>
+          <p><i class="bi bi-shop"></i>Código Intelaf: cel-sam-a05412v</p>
+          <p><i class="bi bi-aspect-ratio"></i>MPN: SM-A055MLGGTPA</p>
+          <p class="font-bold">Precio normal Q1,102</p>
+          <p class="font-bold">Promo TecnoBONO Q980</p>
+        </div>
+
+        <div class="h-4/5 w-8/12">
+          <img class="w-44 h-48" src="imagenes/ap-mbar-.jpg" alt="">
+          <p>APPLE MACBOOK AIR M1 PANTALLA DE 13.3" 8GB DE RAM 256GB DE ALMACENAMIENTO COLOR SILVER TECLADO INGLES
+            MGN93LL/A</p>
+          <p><i class="bi bi-shield-fill-check"></i>12 Meses de garantía</p>
+          <p><i class="bi bi-shop"></i>Código Intelaf: ap-mbar-13m18si</p>
+          <p><i class="bi bi-aspect-ratio"></i>MPN: MGN93LL/A</p>
+          <p class="font-bold">Precio normal Q8,457</p>
+          <p class="font-bold">Promo TecnoBONO Q7,611</p>
+        </div>
+
+        <div class="h-4/5 w-8/12 mr-14">
+          <img class="w-44 h-48" src="imagenes/notebook.jpg" alt="">
+          <p>Notebook XPS 13 Plus 9320 Marca Dell Procesador Intel Core i7 Version 1360P De 2.2 Ghz Con 16GB De Memoria
+            RAM 512GB De Almacenamiento En SSD Pantalla De 13" Touch Con Windows 11 Pro</p>
+          <p><i class="bi bi-shield-fill-check"></i>12 Meses de garantía</p>
+          <p><i class="bi bi-shop"></i>Código Intelaf: dl-xps932i71651</p>
+          <p><i class="bi bi-aspect-ratio"></i>MPN: X9320_FI716512XEBW11P_124</p>
+          <p class="font-bold">Precio normal Q17,339</p>
+          <p class="font-bold">Promo TecnoBONO Q15,605</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="h-full bg-violet-100">
+      <div>
+        <p class="font-bold">Lorem, ipsum.</p>
+        <p class="font-bold text-xl">Lorem, ipsum dolor.</p>
+      </div>
+
+      <div class="h-4/5 w-11/12 bg-slate-100 grid-cols-3 grid-rows-2 bg-white">
+        <div class="h-94 bg-white">
+            <p class="font-bold">Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <button class="h-8 w-20 bg-violet-100 rounded-3xl"></button>
+            <img class="w-72 h-80" src="imagenes/iphone.jpg" alt="">
+        </div>
+        </div>
+        <div class="h"></div>
+        <div class="h"></div>
+        <div class="h"></div>
+      </div>
+    </section>
   </main>
 </body>
 
