@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  2230
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>Maquetacion de pagina</title>
@@ -13,7 +14,7 @@
   class="flex flex-col justify-center items-center bg-gradient-to-r from-purple-500 from-0.25%  via-violet-950 via-100%">
 
   <header
-    class="flex h-24 w-10/12 justify-center bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100% text-white opacity-75 ">
+    class="flex h-24 w-10/12 justify-center bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100% text-white ">
     <nav class="h-14 w-11/12 flex justify-center items-center ">
       <ul class="flex gap-x-8 text-lg relative ">
         <li class="flex gap-x-2 ">
@@ -50,8 +51,9 @@
     </nav>
   </header>
 
-  <main class="gap-x-4 h-screen w-10/12 opacity-75 shadow-2xl shadow-black flex-col ">
-    <section class=" flex justify-around h-80  items-center overflow-hidden bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100%">
+  <main class="gap-x-4 h-screen w-10/12 shadow-2xl shadow-black flex-col ">
+    <section
+      class=" flex justify-around h-80  items-center overflow-hidden bg-gradient-to-r from-pink-300 from-1% via-violet-900 via-0.100%">
       <div class="border-white">
         <i class="bi bi-arrow-left-circle text-3xl text-white "></i>
       </div>
@@ -102,7 +104,7 @@
       </ul>
     </section>
 
-    <section class="h-full bg-white text-base w-full">
+    <section class="h-full bg-white text-base w-full px-14">
       <div class="flex justify-center items-center flex-col h-44 ">
         <p class="font-bold text-xl">Lorem, ipsum.</p>
         <p class="font-bold text-3xl">Lorem ipsum dolor sit.</p>
@@ -111,7 +113,7 @@
 
       <div class="flex justify-around h-screen gap-2 text-sm">
 
-        <div class="h-4/5 w-8/12 ml-16">
+        <div class="h-4/5 w-8/12 ">
           <img class="w-44 h-48" src="imagenes/cel-redmi.jpg" alt="">
           <p>CELULAR REDMI 13C 4GB 128GB 2SIM 6.74"
             50MP NEGRO US</p>
@@ -145,7 +147,7 @@
           <p class="font-bold">Promo TecnoBONO Q7,611</p>
         </div>
 
-        <div class="h-4/5 w-8/12 mr-14">
+        <div class="h-4/5 w-8/12 ">
           <img class="w-44 h-48" src="imagenes/notebook.jpg" alt="">
           <p>Notebook XPS 13 Plus 9320 Marca Dell Procesador Intel Core i7 Version 1360P De 2.2 Ghz Con 16GB De Memoria
             RAM 512GB De Almacenamiento En SSD Pantalla De 13" Touch Con Windows 11 Pro</p>
@@ -158,23 +160,85 @@
       </div>
     </section>
 
-    <section class="h-full bg-violet-100">
-      <div>
+    <section class="h-4/5 bg-violet-100 py-14">
+      <div class="flex flex-col justify-center items-center h-28 ">
         <p class="font-bold">Lorem, ipsum.</p>
         <p class="font-bold text-xl">Lorem, ipsum dolor.</p>
       </div>
-
-      <div class="h-4/5 w-11/12 bg-slate-100 grid-cols-3 grid-rows-2 bg-white">
-        <div class="h-94 bg-white">
+      
+      <div class="h-96 grid  grid-cols-3 grid-rows-2 gap-2 justify-center px-6 py-6 bg-violet-100">
+        <div class="h-full w-80 row-span-2 justify-center flex flex-col items-center bg-white shadow-2xl shadow-violet-100">
+          <p class="font-bold">Lorem, ipsum dolor.</p>
+          <p>Lorem ipsum dolor sit.</p>
+          <button class="h-8 w-24 bg-violet-100 rounded-3xl text-sm">lorem lorem </button>
+          <img class="w-72 h-64 py-6 px-6" src="imagenes/iphone.jpg" alt="">
+        </div>
+        <div class="h-full w-full flex bg-white  shadow-2xl shadow-violet-100">
+          <p class="font-bold h-20 w-32 px-6">Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="h-40 w-56" src="imagenes/iphone-cel.jpg" alt="">
+        </div>
+        <div class="h-full w-full flex bg-white  shadow-2xl shadow-violet-100">
+          <p class="font-bold h-20 w-32 px-6">Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="h-40 w-56" src="imagenes/celulares.jpg" alt="">
+        </div>
+        <div class="h-full w-full col-span-2 flex gap-14 bg-white shadow-2xl shadow-violet-100">
+          <div class="flex flex-col justify-center items-center w-56 px-6">
             <p class="font-bold">Lorem, ipsum dolor.</p>
             <p>Lorem ipsum dolor sit.</p>
-            <button class="h-8 w-20 bg-violet-100 rounded-3xl"></button>
-            <img class="w-72 h-80" src="imagenes/iphone.jpg" alt="">
+            <button class="h-8 w-24 rounded-3xl text-sm ">lorem lorem </button>
+          </div>
+          <img class="h-40 w-full" src="imagenes/laptops.jpg" alt="">
         </div>
+      </div>
+    </section>
+
+    <section class="h-4/5 justify-center">
+      <div class="h-28">
+        <h1></h1>
+        <ul>
+          <li> </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="h-96 flex bg-white gap-6 px-14 items-center justify-center">
+
+        <div class="h-80 w-60 flex items-center flex-col py-4 shadow-2xl shadow-gray-500">
+          <img class="h-40 w-52 " src="imagenes/auriculares1.avif" alt="">
+          <p class="flex justify-center font-bold py-4 h-28 w-52 items-center">Lorem ipsum dolor amet.</p>
+          <div class="flex items-center h-20 w-40 justify-between">         
+            <p>lorem</p>
+            <p  class="border-2 border-gray-400 h-20-w-20 rounded-3xl text-2xl">🤝</p>
+          </div>
         </div>
-        <div class="h"></div>
-        <div class="h"></div>
-        <div class="h"></div>
+        <div class="h-80 w-64 flex items-center flex-col py-4 shadow-2xl shadow-gray-500"> 
+          <img class="h-44 w-52" src="imagenes/auriculares2.jpg" alt="">
+          <p class="flex justify-center font-bold py-4 h-28 w-52 items-center">Lorem, ipsum dolor.</p>
+          <div class="flex items-center h-20 w-40 justify-between">         
+            <p>lorem</p>
+            <p  class="border-2 border-gray-400 h-20-w-20 rounded-3xl text-2xl text-white">🤝</p>
+          </div>
+        </div>
+        <div class="h-80 w-64 flex items-center flex-col py-2 shadow-2xl shadow-gray-500">
+          <img class="h-40 w-52" src="imagenes/bosinas.jpg" alt="">
+          <p class="flex justify-center font-bold py-4 h-28 w-52 items-center">Lorem ipsum dolor sit.</p>
+          <div class="flex items-center h-20 w-40 justify-between">         
+            <p>lorem</p>
+            <p  class="border-2 border-gray-400 h-20-w-20 rounded-3xl text-2xl">🤝</p>
+          </div>
+        </div>
+        <div class="h-80 w-64 flex items-center flex-col py-4 shadow-2xl shadow-gray-500">
+          <img class="h-40 w-52" src="imagenes/bosinas2.jpg" alt="">
+          <p class="flex justify-center font-bold py-4 h-28 w-52 items-center">Lorem ipsum dolor sit.</p>
+          <div class="flex items-center h-20 w-40 justify-between">         
+            <p>lorem</p>
+            <p  class="border-2 border-gray-400 h-20-w-20 rounded-3xl text-2xl">carro compras</p>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>
