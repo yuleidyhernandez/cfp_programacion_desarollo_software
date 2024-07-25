@@ -1,0 +1,56 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "EjemploDeToDoList",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": " nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yuleidyhernandez"
+  },
+  "author": "yuli",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "3.1.4",
+    "standard": "17.1.0"
+  },
+  "dependencies": {
+    "express": "4.19.2",
+    "oracledb": "6.5.1"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
