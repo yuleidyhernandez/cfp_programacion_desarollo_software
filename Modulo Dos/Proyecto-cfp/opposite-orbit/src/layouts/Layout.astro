@@ -21,14 +21,61 @@ const { title } = Astro.props;
     <header>
       <slot />
     </header>
-    <section>
-      <div class="">
+    <section >
+      <div>
         <div class="div-anuncio m-4 bg-blue-200 lg:w-12/12 flex items-end justify-center">
           <i class="bi bi-circle-fill text-xl mr-4 text-yellow-400"></i>
           <i class="bi bi-circle-fill text-xl mr-4 text-yellow-100"></i>
           <i class="bi bi-circle-fill text-xl text-yellow-100"></i>
         </div>
       </div>
+    </section>
+    <section class="flex justify-center flex-col px-4">
+      <h1 class="text-6xl font-bold h-52 flex items-center justify-center">Capacítate y prepárate para un mejor<span class="text-red-500 font-bold ml-6">FUTURO</span></h1>
+      <div class="h-72 bg-pink-200 flex px-6 items-center justify-around lg:w-12/12">
+        <div class="agrandar bg-orange-300 h-56 w-96 m-4 flex flex-col items-center p-8">
+          <h6 class="font-bold w-80 h-14 flex items-start text-xl">Carreras Técnicas</h6>
+          <h1 class="font-bold text-2xl w-80 h-10">Estudia con nosotros</h1>
+          <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-8">Ver más</button>
+        </div>
+        <div class="agrandar bg-orange-300 h-56 w-96 m-4 flex flex-col items-center p-8">
+            <h6 class="font-bold w-80 h-14 flex items-start text-xl">Apoya a nuestro fondo de becas</h6>
+            <h1 class="font-bold text-2xl w-80 h-10">Estudia con nosotros</h1>
+            <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-8">Ver más</button>
+        </div>   
+        <div class="agrandar bg-orange-300 h-72 w-96 m-4 flex flex-col items-center p-8">
+          <h6 class="font-bold w-80 h-14 flex items-start text-2xl">Inscribete hoy mismo</h6>
+          <h1 class="font-bold text-5xl w-80 h-10">Inscripciones 2024</h1>
+          <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-16">Ver más</button>
+        </div>
+      </div>
+
+      <div class="h-72 bg-violet-200 flex px-6 items-center justify-center lg:w-12/12">
+        <div class="agrandar bg-orange-300 h-56 w-96 m-4 flex flex-col items-center p-8">
+          <h6 class="font-bold w-80 h-14 flex items-start text-xl">Conocenos</h6>
+          <h1 class="font-bold text-2xl w-80 h-10">Acerca de nosotros</h1>
+          <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-8">Ver más</button>
+        </div>
+        <div class="agrandar bg-orange-300 h-56 w-96 m-4 flex flex-col items-center p-8">
+            <h6 class="font-bold w-80 h-14 flex items-start text-xl">Aparticipa</h6>
+            <h1 class="font-bold text-xl w-80 h-10">GRAN RIFA SALESIANA 2024</h1>
+            <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-8">Ver más</button>
+        </div>   
+        <div class="agrandar bg-orange-300 h-56 w-96 m-4 flex flex-col items-center p-8">
+          <h6 class="font-bold w-80 h-14 flex items-start text-xl">¿Tienes alguna duda?</h6>
+          <h1 class="font-bold text-2xl w-80 h-10">Contáctanos</h1>
+          <button class="font-bold text-lg h-12 bg-white w-28 rounded-lg -ml-52 mt-16">Ver más</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <span>Valor Q20</span>
+        <img src="Imagenes/camioneta.png" alt="">
+        <img src="Imagenes/motocicleta.png" alt="">
+      </div>
+      <div></div>
+      <div></div>
     </section>
   </body>
 </html>
@@ -38,4 +85,10 @@ const { title } = Astro.props;
   .div-anuncio{
     height: 65vh;
   }
+
+  .agrandar:hover{
+    height: 100%;
+    width: 96%;
+  }
+
 </style>

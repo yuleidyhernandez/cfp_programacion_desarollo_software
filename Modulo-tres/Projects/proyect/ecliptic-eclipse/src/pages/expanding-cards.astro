@@ -1,0 +1,59 @@
+---
+import Layout from "../../../../project1/regular-radiation/src/layouts/Layout.astro";
+import ExpandingCard from "../components/ExpandingCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+   <div class="flex h-screen w-full p-6 gap-6">
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://i2.wp.com/www.adventurealan.com/wp-content/uploads/2018/06/DSC02815-edit-2.jpg?resize=1500%2C1000"
+         />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/OIP.-B0mh3Es6Uf3vEGPX7FkxwHaLH?w=600&h=900&rs=1&pid=ImgDetMain"
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://4kwallpapers.com/images/wallpapers/moraine-lake-canada-valley-of-the-ten-peaks-banff-national-768x1024-3745.jpg"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/OIP.f7TnLF0LNqHZLIY59jaJywHaLH?w=500&h=750&rs=1&pid=ImgDetMain"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/OIP.pLSJxWQeD4qVAWCjWoyE4AHaNK?w=1080&h=1920&rs=1&pid=ImgDetMain"
+         
+      />
+   </div>
+</Layout>
+
+<script>
+   const carta = document.getElementsByClassName("carta");
+   Array.from(carta)[0].classList.toggle("!w-2/3");
+   Array.from(carta)[0].children[0].classList.toggle("!block");
+
+   Array.from(carta).forEach((element) => {
+      element.addEventListener("click", () => {
+         removeActiveClasses();
+         element.classList.toggle("!w-2/3");
+         element.children[0].classList.toggle("!block");
+      });
+   });
+
+   function removeActiveClasses() {
+      Array.from(carta).forEach((element) => {
+         element.classList.remove("!w-2/3");
+         element.children[0].classList.remove("!block");
+      });
+   }
+</script>
+

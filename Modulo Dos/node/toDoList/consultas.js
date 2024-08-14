@@ -11,6 +11,15 @@ const dbConfig ={
 async function run(query, params){
     const connection = await oracledb.getConnection(dbConfig)
     const result = await connection.execute( query,params
+        //
+    )
+    await connection.close()
+    return result
+}
+
+module.exports = run
+
+
         /*`SELECT 'Hola' AS saludo, :id AS id 
         FROM dual
         
@@ -19,12 +28,6 @@ async function run(query, params){
         SELECT 'Hola' AS saludo, 109 AS id 
         FROM dual`,
         [103]*/
-    )
-    console.log(result.rows)
-    await connection.close()
-}
-
-module.exports = run
 
 
 

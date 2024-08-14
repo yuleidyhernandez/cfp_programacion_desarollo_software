@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="flex flex-col items-center">
+
+  <div id="demo">
+    <h2>Let AJAX change this text</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+  </div>
+
+  <div class=" w-64 h-96 flex flex-col  bg-gray-300 mt-0 " >
+    <div class="w-64 h-80 bg-no-repeat flex justify-center bg-cover" id="card"></div>
+    <div class="w-64 h-28 flex ">
+      <h4 class="w-28 h-28 flex items-end justify-center mb-10" id="numero"></h4>
+      <h4 class="w-28 h-28 flex items-end  justify-center " id="nombre"></h4>
+    </div>
+  </div>
+
+  <div class="w-96 h-96 bg-brown-600" id="pokemons"></div>
+
+
+
+
+
+  <script>
+
+    function loadDoc() {
+      const xhttp = new XMLHttpRequest();
+
+      xhttp.onload = function() {
+        const date = JSON.parse(this.responseText)
+        const imagenes = date.sprites.front_default
+        const numeros= date.id
+        const nombre=date.name
+        const pokemones = date.results
+        console.log(pokemones);
+        
+        document.getElementById('pokemons');
+        document.getElementById("card").style.backgroundImage =`url(${imagenes})`;
+        document.getElementById("numero").innerHTML=numeros;
+        document.getElementById("nombre").innerHTML=nombre;
+      }
+      xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/ditto", true);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>

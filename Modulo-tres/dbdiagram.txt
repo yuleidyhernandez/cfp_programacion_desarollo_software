@@ -1,0 +1,63 @@
+table encargados {
+  id integer [primary key]
+  nombre varchar2
+  telefono integer
+  correo varchar2
+  direccion varchar2
+}
+
+table estudiantes {
+  id integer [primary key]
+  nombre varchar2
+  telefono integer
+  correo varchar2
+  id_encargado integer
+}
+
+table educadores {
+  id integer [primary key]
+  nombre varchar2
+  direccion varchar2
+  correo varchar2
+  telefono integer
+}
+
+table horario {
+  id integer [primary key]
+  horario_inicio datetime
+  horario_final datetime
+}
+
+
+table carreras {
+  id integer [primary key]
+  nombre varchar2
+  duracion varchar2
+  id_horario integer
+  id_educador integer
+  id_estudiante integer
+}
+
+table calificaciones {
+  id integer [primary key]
+  id_estudiante integer
+  id_carrera integer
+  id_curso integer
+  nota integer
+}
+
+table inscripciones {
+  id integer [primary key]
+  id_estuduiante integer
+  id_carrera integer
+  id_curso integer
+}
+
+Ref: encargados.id < estudiantes.id_encargado
+Ref: educadores.id - carreras.id_educador
+Ref: estudiantes.id < carreras.id_estudiante 
+Ref: horario.id - carreras.id_horario
+Ref: estudiantes.id < calificaciones.id_estudiante
+Ref: carreras.id < calificaciones.id_carrera
+Ref: estudiantes.id - inscripciones.id_estuduiante
+Ref: carreras.id < inscripciones.id_carrera
