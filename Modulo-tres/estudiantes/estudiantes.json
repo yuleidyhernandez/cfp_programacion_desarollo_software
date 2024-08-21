@@ -1,0 +1,10 @@
+
+{ 
+    "id": 1,
+    "nombre":"rosa",
+    "edad":18,
+    "direccion": "zona 8 Guatemala",
+    "telefono":53654892,
+    "curso": "matematicas" 
+
+}
