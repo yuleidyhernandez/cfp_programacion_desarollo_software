@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import data from '../../estudiantes.json';
+const alumno = data.nombre
+
 
 export interface Estudiante {
 	id: number;
@@ -10,39 +11,35 @@ export interface Estudiante {
 	direccion: string;
 	telefono: number;
 	curso: string;
-  }
- 
-console.log(data);
-const estudiante = data as Estudiante
+ }
+ const estudiante = data as Estudiante
+ const array_estudiantes: Estudiante[] = [
+   estudiante,
+   estudiante,
+   estudiante,
+   estudiante
+]
+ console.log(alumno);
 
-console.log(Object.values(estudiante));
+for(let informacion in array_estudiantes)
+ console.log(array_estudiantes[informacion]);
+
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title='Estudiantes' >
+	<table class="text-white">
+		<tr>Estudiantes</tr>
+		{
+		  array_estudiantes.map((element) => 
+			(
+			<tr>
+			  <td><a href="id">{element.id}</a></td>
+			  <td>{element.nombre}</td>
+			</tr>
+			)
+		  )
+		}
+	  </table>
 </Layout>
 
 

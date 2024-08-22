@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import data from '../../estudiantes.json';
+
+export interface Estudiante {
+	id: number;
+	nombre: string;
+	edad: number;
+	direccion: string;
+	telefono: number;
+	curso: string;
+ }
+ 
+ const estudiante = data as Estudiante 
+---
+
+<script>
+   
+</script>
+
