@@ -1,42 +1,23 @@
-class Animal {
-    nombre: string;
-    hacerSonido: string;
-  
-    constructor(nombre:string,hacerSonido:string){
-      this.nombre = nombre
-      this.hacerSonido = hacerSonido ;
-    }
-  }
-   
-  class Perro extends Animal{
-    color:string;
+//interface
 
-    constructor(color:string,hacerSonido:string){
-      super(hacerSonido,color)
-      this.hacerSonido= hacerSonido
-    }
-  }
-  
-  const perro:Perro= {
-      nombre: "rambo",
-      hacerSonido:"guao",
-      color:"negro"
-  }
-  
-  console.log(perro.hacerSonido)
+interface Animal{
+  nombre:string;
+  sonido:()=> void;
+}
 
-  // class Animal {
-//   nombre: string;
-//   hacerSonido: string;
-//   constructor(nombre:string,hacerSonido:string){
-//     this.nombre = nombre
-//     this.hacerSonido = hacerSonido ;
-//   }
-// }
-// class Perro extends Animal{
-// }
-// const perro:Perro= {
-//     nombre: "rambo",
-//     hacerSonido:"guao"
-// }
-// console.log(perro.hacerSonido)
+interface Perro extends Animal{
+
+}
+
+const miPerro:Perro={
+  nombre:"Max",
+  sonido:() => "Wuaw",
+};
+
+console.log(`El perro se llama ${miPerro.nombre} y hace ${miPerro.sonido}`);
+
+// const miPerro = {
+//   nombre: "Max",
+//   sonido: () => "Wuaw",
+// };
+// console.log(`El perro se llama ${miPerro.nombre} y hace ${miPerro.sonido}`)
